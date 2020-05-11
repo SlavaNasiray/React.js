@@ -1,0 +1,36 @@
+{
+"useTabs": false, // использовать табы? нет (я за пробелы)
+"printWidth": 80, // длина строки - 80
+"tabWidth": 2, // длина "таба" - 2 пробела
+"singleQuote": true, // использовать одинарные кавычки - да!
+"trailingComma": "es5", // запятая в последней строке - да
+"jsxBracketSameLine": false, // закрывающийся jsx в этой же строке
+"parser": "flow", // парсер - flow (пока не важно)
+"semi": false // точка с запятой - нет
+}
+
+{
+"rules": {
+"semi": [
+"error",
+"always"
+],
+"quotes": [
+"warn",
+"double"
+]
+}
+}
+
+{
+"rules": {
+"jsx-quotes": [
+1,
+"prefer-double"
+]
+}
+}
+
+"plugin:prettier/recommended"
+
+"endOfLine":"auto" //правила окончания строки
