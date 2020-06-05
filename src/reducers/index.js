@@ -34,7 +34,7 @@ const updateCart = (state, action, amount) => {
 			id: cartBook.id,
 			title: cartBook.title,
 			price: cartBook.price,
-			count: 0,
+			count: 1,
 		};
 		return {
 			...state,
@@ -52,10 +52,10 @@ const reducer = (state = initialState, action) => {
 				loading: false,
 			};
 		case "BOOKS_ADD_TO_CART":
-			return updateCart(state, action);
+			return updateCart(state, action, 1);
 
 		case "BOOKS_REMOVE_TO_CART":
-			return updateCart(state, action);
+			return updateCart(state, action, -1);
 		default:
 			return state;
 	}
